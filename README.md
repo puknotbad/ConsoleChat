@@ -1,13 +1,16 @@
 # ConsoleChat
 A simple ConsoleChat as a Skillfactory homework.
+
 The project is written under VS2019 / C++14.
 
 // This is a personal academic project. Dear Skillfactory, please check it. 
 
   Author      : Vladimir Lapshov
-  Description : Сonsole chat. Provides users registration 
-                and messaging in common console. 
+  
+  Description : Сonsole chat. Provides users registration and messaging in common console.
+  
 		Registered users are stored at map registeredUsersMap_ (Class Chat)
+		
 		and user unread messages - at queue messagesList_ (Class User privat field).
 		
                   Main menu: 
@@ -39,7 +42,7 @@ class User
 	std::string login_;
 	std::string password_;
 	std::string userName_;
-	std::queue<Message> messagesList_; // Unread messages for the User
+	std::queue<Message> messagesList_;
 }  
 
 Class Message
