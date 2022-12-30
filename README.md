@@ -1,18 +1,23 @@
 # ConsoleChat
-A simple ConsoleChat as a Skillfactory homework
+A simple ConsoleChat as a Skillfactory homework.
+The project is written under VS2019 / C++14.
 
 // This is a personal academic project. Dear Skillfactory, please check it. 
 
   Author      : Vladimir Lapshov
-  Description : Simple console chat. Provides users registration 
-                and messaging in common console.
+  Description : Сonsole chat. Provides users registration 
+                and messaging in common console. 
+		Registered users are stored at map registeredUsersMap_ (Class Chat)
+		and user unread messages - at queue messagesList_ (Class User privat field).
 		
                   Main menu: 
                 1 - new user registration, 2 - login existing, 0 - exit
 		
                   User menu: 
                 1 - receive messages, 2 - new message, 3 - show users, 0 - exit 
+		
 ![ChatDemo](ChatDemo.png)
+
 Class Chat - main Class in the ConsoleChat. 
 	Provides user registration, login/logout, massages reading and writing
 	
@@ -26,8 +31,8 @@ Class Chat - main Class in the ConsoleChat.
 	std::shared_ptr<User> getUserByLogin(const std::string& login);
 
 MyExceptions.h
-A couple of useless exceptions redefined  here, 
-just for show
+	A couple of useless exceptions redefined  here, 
+	just for show
 
 class User
 {
