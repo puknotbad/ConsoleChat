@@ -11,7 +11,7 @@ The project is written under VS2019 / C++14.
   
 		Registered users are stored at map registeredUsersMap_ (Class Chat)
 		
-		and user unread messages - at queue messagesList_ (Class User privat field).
+		and user unread messages - at queue messagesList_ (Class User private field).
 		
                   Main menu: 
                 1 - new user registration, 2 - login existing, 0 - exit
