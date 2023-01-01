@@ -19,16 +19,16 @@ class Chat
 	bool registerNewUser();
 	const bool login(); 
 
-	const void showAllRegisteredUsers() const;
+	void showAllRegisteredUsers() const;
 	void sendMessage();
-	std::shared_ptr<User> getUserByLogin(const std::string& login);
+	std::shared_ptr<User> getUserByLogin(const std::string& loginName);
 
 /*	** currently not used functions **
 	std::vector<std::shared_ptr<User>> getUsersByName(const std::string& name); // ! name isn't a key in the chat book
 	void showOnlineUsers() const; // show active users in multithread mode
 
     ** checkPassword() is now realised in class User **   
-	const bool checkUserPassword(const std::string& login, const std::string& password) {return registeredUsersMap_[login]->getPassword() == password;};
+	const bool checkUserPassword(const std::string& loginName, const std::string& password) {return registeredUsersMap_[loginName]->getPassword() == password;};
 */
 
 public:

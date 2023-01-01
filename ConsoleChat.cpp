@@ -11,8 +11,8 @@
 //-----------------------------------------------------------------------
 
 
-#include "User.h" 
-#include "Message.h" 
+//#include "User.h" 
+//#include "Message.h" 
 #include "Chat.h" 
 //#include <iostream>  
 #include <windows.h> 
@@ -31,7 +31,7 @@ int main(int argc, char const* argv[])
     chat.startChat();
     while (chat.getChatState()) {
         chat.showMainMenu();
-        while (chat.getCurrentUser() != nullptr) {
+        while (chat.getCurrentUser()) {
             chat.showUserMenu();
         }
     }

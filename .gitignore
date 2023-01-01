@@ -67,3 +67,5 @@
 /ConsoleChat.sln
 /ConsoleChat.vcxproj
 /ConsoleChat.vcxproj.filters
+Message.cpp
+MyException.cpp

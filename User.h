@@ -15,14 +15,14 @@ class User
 	
 public:
 	User(const std::string& login, const std::string& password, const std::string& userName)
-		: login_(login), password_(password), userName_(userName) {}; 
+		: login_(login), password_(password), userName_(userName) {}
 	//const std::string& getPassword() { return password_; };
-	const bool checkPassword(std::string& password) { return password_==password; };
-	void setPassword(const std::string& password) { password_ = password; };
-	const std::string& getUserName() { return userName_; };
-	void setUserName(const std::string& userName) { userName_ = userName; };
-	const std::string& getUserLogin() { return login_; };
-	void addNewMessage(Message& message) { messagesList_.push(message); }; // adds new offline message to queue
+	bool checkPassword(const std::string& password) { return password_==password; }
+	void setPassword(const std::string& password) { password_ = password; }
+	const std::string& getUserName() { return userName_; }
+	void setUserName(const std::string& userName) { userName_ = userName; }
+	const std::string& getUserLogin() { return login_; }
+	void addNewMessage(const Message& message) { messagesList_.push(message); } // adds new offline message to queue
 	void showNewMessages(); // shows and erases (pop) newMessages queue
 };
 
