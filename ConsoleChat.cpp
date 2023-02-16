@@ -10,7 +10,7 @@
 //                  User menu: 
 //                1 - receive messages, 2 - new message, 3 - show users, 0 - exit 
 // 
-//                Sha1 hash function provides password storage/check safe.
+//                Sha1 hash function provides password protection
 //                std::queue<Message> is used for unread user messages storage;
 //                std::map<std::string, std::shared_ptr<User>> stores all registered users
 //-----------------------------------------------------------------------
