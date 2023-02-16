@@ -19,6 +19,8 @@ The project is written under VS2019 / C++14.
                   User menu: 
                 1 - receive messages, 2 - new message, 3 - show users, 0 - exit 
 		
+		Sha1 hash function provides password protection.
+		
 ![ChatDemo](ChatDemo.png)
 
 Class Chat - main Class in the ConsoleChat. 
