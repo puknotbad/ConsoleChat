@@ -3,11 +3,9 @@
 //#include <vector> // TODO: for getUsersByName() function
 #include <map> 
 #include <memory> 
-// #include <exception> 
+// #include <exception> // exceptions are included at Chat.cpp as MyExceptions.h Class header
 #include "Message.h" 
 #include "User.h"
-
-// exceptions if need
 
 class Chat
 {

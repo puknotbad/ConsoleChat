@@ -148,7 +148,7 @@ void Chat::showAllRegisteredUsers() const
 	std::cout << "Registered users: " << std::endl;
 	for (auto &user : registeredUsersMap_)
 	{
-		std::cout << "Name " << user.second->getUserName() << " | Nickname (login): " << user.first // second->getUserLogin()
+		std::cout << "Name " << user.second->getUserName() << " | Nickname (login): " << user.first 
 			<< (currentUser_ == user.second ? " *current" : "") << std::endl;
 	}
 	std::cout << "-------------------------" << std::endl;

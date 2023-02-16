@@ -69,3 +69,4 @@
 /ConsoleChat.vcxproj.filters
 Message.cpp
 MyException.cpp
+Debug/chat.obj.enc
